@@ -26,7 +26,7 @@ synopsis = page %>% html_nodes(".ratings-bar+ .text-muted") %>% html_text()
 #view synopsis
 View(synopsis)
 #creating dataframe
-movies = data.frame(name, year, rating, synopsis, stringsAsFactors = FALSE)
+movies = data.frame(name, year, rating, synopsis)
 View(movies)
 #exporting dataframe
 write.csv(movies, "movies.csv")
